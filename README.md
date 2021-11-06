@@ -1,18 +1,29 @@
-## Installation
+# MinePHP
+An open source PHP framework for the Minecraft Server Status API.
 
-Download the repository and paste the mine.php file in your project directory. PHP 7 or higher is recommended.
+## Installation
+- Clone the repository in the first place.
+```bash
+git clone https://github.com/isferhossain/MinePHP.git
+```
+
+- Navigate to the cloned directory and copy the `mine.php` file. Finally, paste it in your own project folder.
+<br>(PHP 7.0 or higher is recommended for standard use cases)
 
 ## Usage
 
 ```php
 include "mine.php";
-$minephp = new MinePHP("hypixel.net", "java");
+$minephp = new MinePHP("hypixel.net", "java"); // the "java" keyword can be replaced with "bedrock" if you're trying to access a Bedrock Minecraft server
+
 // load the data
 $minephp->update_playercount();
 $minephp->update_serverdata();
+
 // use the built-in features.
 echo $minephp->ip;
 ```
+
 Here's a list of all the built-in commands:
 *  `max_players`
 * `online_players`
