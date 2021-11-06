@@ -1,6 +1,6 @@
 ## Installation
 
-Download the repository and paste the mine.php file in your project directory.
+Download the repository and paste the mine.php file in your project directory. PHP 7 or higher is recommended.
 
 ## Usage
 
