@@ -3,6 +3,7 @@
 	Isfer Hossain
 	11th of November, 2021 
 	- Please read the documentation before continuing
+	(version 1.1)
 */
 class MinePHP {
 	private $call_api;
@@ -15,6 +16,7 @@ class MinePHP {
 	public $icon;
 	public $ip;
 	public $port;
+	public $motd;
 	function __construct($server_ip = null, $software = null) {
 		$this->software_name = $software;
 		if ($software == "bedrock") {
@@ -22,6 +24,8 @@ class MinePHP {
 		} elseif($software == "java"){
 			$this->call_api = json_decode(file_get_contents("https://api.mcsrvstat.us/2/".$server_ip));
 		}
+		$this->update_playercount();
+		$this->update_serverdata();
 	}
 	public function is_online(){
 		if ($this->call_api->online == true){
@@ -48,5 +52,4 @@ class MinePHP {
 			$this->port = $this->call_api->port;
 		}
 	}
-
 }
