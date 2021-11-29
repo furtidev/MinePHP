@@ -16,10 +16,6 @@ git clone https://github.com/isferhossain/MinePHP.git
 include "mine.php";
 $minephp = new MinePHP("hypixel.net", "java"); // the "java" keyword can be replaced with "bedrock" if you're trying to access a Bedrock Minecraft server
 
-// load the data
-$minephp->update_playercount();
-$minephp->update_serverdata();
-
 // use the built-in features.
 echo $minephp->ip;
 ```
