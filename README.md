@@ -13,7 +13,6 @@ git clone https://github.com/isferhossain/MinePHP.git
 <br>(PHP 7.0 or higher is recommended for standard use cases)
 
 ## Usage
-
 ```php
 include "mine.php";
 $minephp = new MinePHP("hypixel.net", "java"); // the "java" keyword can be replaced with "bedrock" if you're trying to access a Bedrock Minecraft server
