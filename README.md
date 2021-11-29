@@ -1,4 +1,6 @@
-# MinePHP
+<p align="center"><img src="https://i.ibb.co/fvdwp1s/Mine-PHP-100x100.png"></img></p>
+ 
+## MinePHP
 An open source PHP framework for the Minecraft Server Status API.
 
 ## Installation
@@ -17,7 +19,8 @@ include "mine.php";
 $minephp = new MinePHP("hypixel.net", "java"); // the "java" keyword can be replaced with "bedrock" if you're trying to access a Bedrock Minecraft server
 
 // use the built-in features.
-echo $minephp->ip;
+echo $minephp->ip;![68747470733a2f2f692e6962622e636f2f316437334e46702f4d696e655048502e706e67](https://user-images.githubusercontent.com/44488750/143909892-3c2ed964-ff58-4506-a167-ce95ee97c7b3.png)
+
 ```
 
 Here's a list of all the built-in commands:
