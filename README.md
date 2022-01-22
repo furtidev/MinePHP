@@ -30,6 +30,10 @@ Here's a list of all the built-in commands:
 * `icon`
 * `ip`
 * `port`
+* `motd`
+* `map`
+* `plugins`
+* `mods`
 
 ## Contributing
 Pull requests are welcome.
