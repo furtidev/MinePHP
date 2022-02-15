@@ -1,9 +1,9 @@
 <?php
 /*
 	Isfer Hossain
-	22th of January, 2022
+	16th of February, 2022
 	- Please read the documentation before continuing
-	(version 1.2)
+	(version 1.3)
 */
 class MinePHP {
 	private $call_api;
