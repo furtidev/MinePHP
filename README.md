@@ -34,6 +34,7 @@ Here's a list of all the built-in commands:
 * `map`
 * `plugins`
 * `mods`
+* `online`
 
 ## Contributing
 Pull requests are welcome.
