@@ -20,6 +20,7 @@ class MinePHP {
 	public $map;
 	public $plugins;
 	public $mods;
+	public $online;
 	function __construct($server_ip = null, $software = null) {
 		$this->software_name = $software;
 		if ($software == "bedrock") {
@@ -45,6 +46,7 @@ class MinePHP {
 	}
 	public function update_serverdata(){
 		if ($this->is_online() == 1){
+			$this->online = true
 			$this->hostname = $this->call_api->hostname;
 			$this->protocol = $this->call_api->protocol;
 			$this->version = $this->call_api->version;
@@ -73,6 +75,8 @@ class MinePHP {
 			} else {
 				$this->mods = "mod data not available";
 			}
+		} else {
+			$this->online = false
 		}
 	}
 }
